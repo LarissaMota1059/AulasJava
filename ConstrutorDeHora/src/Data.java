@@ -1,5 +1,6 @@
 
 public class Data {
+	
 	public static final int FORMATO_12H = 1;
 	public static final int FORMATO_24H = 2;
 	
@@ -96,6 +97,4 @@ public class Data {
 	public int getSegundo() {
 		return segundo;
 	}
-	
-
 }
