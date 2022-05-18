@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class main {
 
@@ -104,14 +105,77 @@ public class main {
 //			System.out.println("2 x" + x + " = " + x*2);
 //		}
 		
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Digite um numero qualquer");
-		int y = entrada.nextInt();
+//		Scanner entrada = new Scanner(System.in);
+//		System.out.println("Digite um numero qualquer");
+//		int y = entrada.nextInt();
+//		
+//		for(int x=0; x<=10; x++) {
+//			System.out.println(y + " x " + x + " = " + x*y);
+//		}
 		
-		for(int x=0; x<=10; x++) {
-			System.out.println(y + " x " + x + " = " + x*y);
+		int x1 = 3;
+		int y1 = 3;
+		int z1 = 3;
+		
+		System.out.println(x1);
+		System.out.println(y1);
+		System.out.println(z1);
+		
+		
+		double x [] = {3, 5, 3, 5};
+		
+		for (int aux = 0; aux < x.length; aux++) {
+			System.out.println("valor do indici " + aux + " = " + x[aux]);
 		}
-
+		
+		String nome[] = { "Larissa", "Carla", "Luiza"};
+		
+		for (int aux1 = 0; aux1 < x.length; aux1++) {
+			System.out.println(nome[aux1]);
+			if (nome[aux1] == "Carla") {
+				System.out.println("O indice de Carla é = " + aux1);
+			}
+		}
+		
+		int[] arrayInt = new int[5];
+		String[] ArrayString = new String[4];
+		double[] ArrayDouble = new double[3];
+		
+		arrayInt[3] = 4;
+		
+		int[] numero = new int[6];
+		Scanner teclado = new Scanner(System.in);
+		
+		for (int aux2 = 0; aux2 < x.length; aux2++) {
+			System.out.println("Digite um numero qualquer");
+			numero[aux2] = teclado.nextInt();
+		}
+		
+		for (int aux2 = 0; aux2 < x.length; aux2++) {
+			System.out.println("Indice " + aux2 + " = " + numero[aux2]);
+		}
+		
+		Object[] arrayObject = new Object[4];
+		
+		arrayObject[0] = 12;
+		arrayObject[0] = "Larissa";
+		arrayObject[0] = 13.8;
+		arrayObject[0] = true;
+		arrayObject[0] = arrayInt;
+		
+		for (int aux2 = 0; aux2 < x.length; aux2++) {
+			System.out.println("Indice " + aux2 + " = " + numero[aux2]);
+		}
+		
+		int[][] arrayBidirecional = new int[4][3];
+		
+		for (int linha = 0; linha < arrayBidirecional.length; linha++) {
+			for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) {
+				System.out.println("Indice [" +linha+ "]["+coluna +"] * " + arrayBidirecional[linha][coluna]+" ");
+			}
+			System.out.println();
+		}
+		
 	}
 
 }
