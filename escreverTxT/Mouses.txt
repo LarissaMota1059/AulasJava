@@ -1,0 +1,4 @@
+
+Mouse [funciona = true, Quantidade de Botoes = 5, tamanho = Pequeno ]
+Mouse [funciona = true, Quantidade de Botoes = 5, tamanho = Médio ]
+Mouse [funciona = true, Quantidade de Botoes = 5, tamanho = Grande ]
