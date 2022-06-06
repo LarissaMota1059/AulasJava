@@ -1,13 +1,13 @@
 
-public class Preparador  { //MÈtodo Preparador
+public class Preparador  { //M√©todo Preparador
 	
-	public void prepararBebida(Bebida bebida) { //v·riavel "Objeto"
+	public void prepararBebida(Bebida bebida) { // metodo generico preparar bebida
 		
-		System.out.println("Preparando a Bebida " + bebida.getNome() ); //Preparar= MÈtodo
+		System.out.println("Preparando a Bebida " + bebida.getNome() ); //Preparar= M√©todo
 		System.out.println("Pegar copo");
 		bebida.preparar();
 		
-		if(bebida.isAquecer()) {
+		if(bebida.isAquecer()) {  //metodo generico para aquecer, s√≥ vai funcionar se for verdadeiro porque nao pode ser aolicado a todas as bebidas
 			System.out.println("Aquecendo a bebida " + bebida.getNome());
 		}
 		
