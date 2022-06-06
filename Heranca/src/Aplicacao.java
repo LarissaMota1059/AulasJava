@@ -3,7 +3,7 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		
-		Veiculo veiculo = new Veiculo();
+		Veiculo veiculo = new Veiculo();  //intanciado um novo objeto beiculo
 		
 		veiculo.setMarca("Honda"); 
 		veiculo.setModelo("City");
@@ -12,7 +12,7 @@ public class Aplicacao {
 		veiculo.imprimir();
 		veiculo.buzinar();
 		
-		Carro carro =  new Carro();
+		Carro carro =  new Carro();  //instanciado um bjeto carro
 		
 		carro.setMarca("Fiat");
 		carro.setModelo("Argo");
