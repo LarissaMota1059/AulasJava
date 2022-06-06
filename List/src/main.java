@@ -9,25 +9,24 @@ public class main {
 		
 		List lista = new ArrayList(); //Instanciar uma lista
 		
-		lista.add("abc"); //Como a list vem da object, o polimorfismo dela permite colocar vários valores de difentes tipos
+		lista.add("abc"); // list vem da object, o polimorfismo dela permite colocar vários valores de difentes tipos
 		lista.add(12);
 		lista.add(true);
 		
-		//Aqui  o for foi usado para interagir com a lista e permitir que a variável x mostrasse os valores da lista (Interação mais trabalhosa)
+		// for foi usado para interagir com a lista e permitir que a variável x mostrasse os valores da lista (Interação mais trabalhosa)
 		for(int x=0;x<lista.size();x++) {
 		System.out.println(lista.get(x));
 		
 		}
 		
 
-		//Enhanced for facilita o código, pois automaticamente interage com a lista (Interação mais simples)
+		// for facilita o código, e automaticamente interage com a lista
 		for(Object valor: lista) {
 			System.out.println(valor);
 		}
 		System.out.println();
 	
 		//No remove pode-se utilizar tanto o index como o objeto
-		//Ao contrário do array, aqui quando você exclui um item ele não mostra nulo, mas remove completamente, pois utiliza o método lista e não direto o objeto
 		lista.remove(0);
 		for(Object valor: lista) {
 			System.out.println(valor);
@@ -49,7 +48,7 @@ public class main {
 		System.out.println();
 		
 		
-		lista.set(0, "hue");//Set substitui o que estava na posição 0
+		lista.set(0, "hue");//Set substitui o que estava no 0
 		for(Object valor: lista) {
 			System.out.println(valor);
 		}
