@@ -3,12 +3,13 @@ public class Cachorro extends  Animal {
 
 
 		@Override
-		public  void  falar() {
+		public  void  falar() { 
 			
-			System.out.println("AU AU");
+			super.falar();  //super indica que o metodo deriva da classe abstrata
+			System.out.println("AU AU");  
 		}
 		
-		public  void  morder () {
+		public  void  morder () {  //metodo apenas para o cachorro
 			System.out.println("NHAC!!");
 		}
 			
