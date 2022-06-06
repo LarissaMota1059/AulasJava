@@ -11,13 +11,13 @@ public enum DiaDaSemana {
 		SABADO(7);
 		
 		
-		private int num;
+		private int num;  //variavl pra atribuir um numero para os dias da semana 
 
-		private DiaDaSemana(int num) {
+		private DiaDaSemana(int num) {  //construtor privado
 			this.num = num;
 		}
 
-		public int getNum() {
+		public int getNum() {  //retorna variavel num
 			return num;
 		}
 
