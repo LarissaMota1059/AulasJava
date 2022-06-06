@@ -1,23 +1,23 @@
 
 public class Veiculo {
-	
+	//criando atributos
 	private String nome;
 	protected String marca;
 	protected String modelo;
 	protected int Ano;
 	
-	public void buzinar() {
+	public void buzinar() {  //metodo buzinar
 		System.out.println("BI BI");
 	}
 	
-	public void imprimir() {
+	public void imprimir() {  //metodo imprimir as informaçoes
 		
 		System.out.println("Marca: " + marca);
 		System.out.println("Modelo: " + modelo);
 		System.out.println("Ano: " + Ano);
 	}
 	
-	public String getNome() {
+	public String getNome() {  //pra que outras classes vizualizam seus atributos
 		return nome;
 	}
 	public void setNome(String nome) {
