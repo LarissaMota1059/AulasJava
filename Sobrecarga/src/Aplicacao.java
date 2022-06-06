@@ -3,34 +3,31 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		
-Scanner scanner = new Scanner(System.in);
-		
-			
-		
+// classe Scanner  usada para que o usuario possa colocar suas proprias respostas no console ao inves de só pega
+		Scanner valor = new Scanner(System.in);
+		//  instanciada a variavel matematica do tipo Matematica para ter acesso aos metodos da classe Matematica
 		Matematica matematica = new Matematica();
 		
-		System.out.println("Somar dois números");
-		System.out.println("Digite o primeiro número: ");
-		int x = scanner.nextInt();
 		
-		System.out.println("Digite o segundo número: ");
-		int y = scanner.nextInt();
+		System.out.println("Área dos polígonos");
+		System.out.println("Digite a altura do polígono");
+		// O comando nextInt() e do metodo Scanner e permite que o usuario digite um valor e ele interprete como int
+		int x = valor.nextInt();
+		System.out.println("Digite a largura do polígono");
+		int y = valor.nextInt();
 		
+		// Aqui foram chamados os metodos da classe Matematica
+		int areaQ = matematica.area(x,y);
 		
-		int soma = matematica.somar(x, y);
+		double areaT = matematica.area(x,y);
 		
-		System.out.println("O resultado é " +  soma);
+		int areaR = matematica.area(x,y);
 		
-		soma = matematica.somar(x, y, 5);
-		
-		System.out.println("O resultado é " +  soma);
-		
-		double soma2 = matematica.somar(x, y);
-		
-		System.out.println("O resultado é " +  soma2);
-		
-	}
-
+		// Resultado final sendo mostrado para o usuario
+		System.out.println("");
+		System.out.println("A área do quadrado é: " + areaQ);
+		System.out.println("A área do triângulo é: " + areaT);
+		System.out.println("A área do retângulo é: " + areaR);
 	}
 
 
