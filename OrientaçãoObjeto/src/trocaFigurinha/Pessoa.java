@@ -1,29 +1,26 @@
 package trocaFigurinha;
 
 public class Pessoa {
+	// Criando atributos para a classe 
 	String nome;
 	int numFigurinhas;
+	// O atributo x serve para controlar a mensagem que serÃ¡ mostrada
+	int x=1;
 	
+	// Metodo que recebe as figurinhas
 	void Receber(int numFigurinhas) {
 		this.numFigurinhas += numFigurinhas;
 		
 	}
 	
-	boolean Dar(int numFigurinhas, Pessoa pessoa) {
-		boolean msg;
-		
-		
+	// Metodo que da as figurinhas
+	void Dar(int numFigurinhas, Pessoa pessoa) {	
+		//  if para impedir que o usuario dÃª mais figurinhas do que tem
 		if(this.numFigurinhas < numFigurinhas) {
-			System.out.println("O número de figurinhas que você tem, é menor que a que você quer dar!");
-			msg = false;
-			
+			System.out.println("VocÃª nÃ£o pode trocar, pois nÃ£o possui a quantidade necessÃ¡ria de figurinhas \n");
+			x=2;
 		}else {
-				
-			this.numFigurinhas -= numFigurinhas;
-			pessoa.Receber(numFigurinhas);
-			msg = true;
+		this.numFigurinhas -= numFigurinhas;
+		pessoa.Receber(numFigurinhas);
 		}
-		
-		return msg;
 	}
-}
