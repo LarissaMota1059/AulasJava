@@ -1,13 +1,13 @@
 
 public abstract class Item {
-	private int posX;
+	private int posX; //atribuindo variaveis
 	private int posY;
 	
-	public void pegar() {
+	public void pegar() {  //metodo generico pegar
 		
 	}
 
-	public int getPosX() {
+	public int getPosX() {  
 		return posX;
 	}
 
