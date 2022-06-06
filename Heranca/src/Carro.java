@@ -1,13 +1,13 @@
 
 public class Carro extends Veiculo{
 	
-	private boolean quatroPortas;
+	private boolean quatroPortas;  //variavel
 
 	@Override
-	public void imprimir() {
+	public void imprimir() {  //sobscreve o metodo imprimir do carro pq ele tem uma variavel a mais que os outros
 		// TODO Auto-generated method stub
 		System.out.println("tem quadro Portas: " + quatroPortas);
-		super.imprimir();
+		super.imprimir();  //super herda todo o codigo do metodo imprimir
 	}
 
 	public boolean isQuatroPortas() {
