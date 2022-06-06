@@ -1,13 +1,11 @@
 
 public class Refrigerante extends Bebida {
 
-	public Refrigerante() { //Construtor
-		
-		super("Refrigerante", false); //Super= chama o construtor da Super classe
-	
+	public Refrigerante() { // Metodo para chamar o refrigerante da classe principal e herdar os atributos de bebidas
+		super("Refrigerante", false);
 	}
 
-	@Override
+	@Override  // Metodo Generico herdado da classe bebida com caracteristicas e adionadas apenas para o refrigerante
 	public void preparar() {
 		
 		super.preparar();
