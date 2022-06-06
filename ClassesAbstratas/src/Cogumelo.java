@@ -1,7 +1,7 @@
 
 public class Cogumelo extends Item {
 
-	@Override
+	@Override  //subscreve metodo pegar da classe abstrata item
 	public void pegar() {
 		System.out.println("Pegar Cogumelo");
 	}
