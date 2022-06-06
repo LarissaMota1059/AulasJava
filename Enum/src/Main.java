@@ -10,7 +10,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		
-		double pi = Main.PI; //Mostrando que para cada constante que criar sem ser no enum tem que ser guardada em algum lugar.
+		double pi = Main.PI; /
 		
 		DiaDaSemana hoje = DiaDaSemana.SEGUNDA;
 		
