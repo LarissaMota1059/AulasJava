@@ -30,7 +30,7 @@ public class Main {
 		Cliente cliente = new Cliente();
 		
 		
-		cliente.setNome("Pedro");
+		cliente.setNome("Larissa");
 		cliente.setCpf(121);
 		cliente.setNumConta(5546543);
 		
@@ -38,7 +38,7 @@ public class Main {
 		System.out.println(cliente);
 		
 		Cliente cliente2 = new Cliente();
-		cliente2.setNome("Pedro");
+		cliente2.setNome("Carla");
 		cliente2.setCpf(121);
 		cliente2.setNumConta(5546543);
 		
